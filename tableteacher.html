@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طريقك</title>
+    <link rel="icon" href="IMG/graduation-cap-solid (2).svg">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/tableteacher.css">
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" dir="rtl" >
+    <a href="index.html"
+      class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+    >
+      <h2 class="logo m-0">
+       <i class="fa-solid fa-graduation-cap"></i> طريقك  
+      </h2>
+    </a>
+      <div class="icons" >
+        <a href="tech.html"><i class="faf fa-solid fa-right-from-bracket"></i></a>
+      </div>
+      
+    
+    </nav>
+  <!-- Navbar End -->
+
+    <div class="all">
+      <main class=" table" dir="rtl">
+        <section class="table_header">
+          <h1 style="text-align: center; color: rgb(255, 255, 255);">بيانات الطلاب</h1>
+        </section>
+        <section class="table_body">
+          <table id="data">
+            <thead>
+              <tr>
+                <th></th>
+                <th>الاسم</th>
+                <th>رقم الموبايل</th>
+                <th>الايميل</th>
+                <th>المرحلة الدراسية</th>
+                <th>حذف</th>
+              </tr>
+            </thead>
+            <tbody id="tablebody">
+              <tr>
+                <td>0</td>
+                <td>  عبدالرحمن </td>
+                <td>010000000</td>
+                <td>salim@gmail.com</td>
+                <td>الثالث الثانوي</td>
+                <td>  <button class="btn btn-outline-warning" onclick="deleteData(0)"> حذف </button></td>
+              </tr>
+               <tr>
+                <td>1</td>
+                <td>ميرنا حماده</td>
+                <td>010000000</td>
+                <td>salim@gmail.com</td>
+                <td>الثاني الثانوي</td>
+                <td>  <button class="btn btn-outline-warning" onclick="DeleteStudent(1);" > حذف </button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>حسام</td>
+                <td>010000000</td>
+                <td>salim@gmail.com</td>
+                <td>الثالث الثانوي</td>
+                <td>  <button class="btn btn-outline-warning" onclick="DeleteStudent(2);" > حذف </button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>مي عصام</td>
+                <td>010000000</td>
+                <td>salim@gmail.com</td>
+                <td>الثالث الثانوي</td>
+                <td>  <button class="btn btn-outline-warning" onclick="DeleteStudent(3);" > حذف </button></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>مصطفي سعيد</td>
+                <td>010000000</td>
+                <td>salim@gmail.com</td>
+                <td>الثالث الثانوي</td>
+                <td>  <button class="btn btn-outline-warning" onclick="DeleteStudent(4);" > حذف </button></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>وليد</td>
+                <td>010000000</td>
+                <td>salim@gmail.com</td>
+                <td>الثالث الثانوي</td>
+                <td>  <button class="btn btn-outline-warning" onclick="DeleteStudent(5);" > حذف </button></td>
+              </tr> 
+              
+                
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+   
+    <script src="Javascript/script.js"></script>
+    <script src="Javascript/home.js"></script>
+  </body>
+</html>
