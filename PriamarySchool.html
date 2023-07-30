@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>طريقك</title>
+    <link rel="icon" href="IMG/graduation-cap-solid (2).svg">
+    <link rel="stylesheet" href="/bootstrapfiles/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bootstrapfiles/css/all.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" dir="rtl" >
+      <a href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+        <h2 class="logo m-0">
+         <i class="fa-solid fa-graduation-cap"></i> طريقك  
+        </h2>
+      </a>
+        <div class="links navbar-nav  p-4 p-lg-0">
+          <a href="tablestudent.html"  > بياناتك  </a>
+        </div>
+       
+      
+        <div class="icons" >
+          <a href="index.html"><i class="faf fa-solid fa-right-from-bracket"></i></a>
+        </div>
+        
+      
+      </nav>
+    <!-- Navbar End -->
+
+    <!-- popper card click book now -->
+    <div class="popper" >
+      <div class="cardpopper" id="pop">
+      <img src="images/checkicon.png" alt="">
+      <h3>تم الحجز بنجاح</h3>
+      <button class="btnclose">Close</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="row" id="allcards">
+
+    </div>
+
+    <!-- Footer Start -->
+    <div dir="rtl" class="container-fluid footer pt-5 mt-5 wow fadeIn">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h4 class="mb-3">سجل الآن لأول مرة</h4>
+            <p>
+              استمتع مع موقعنا بالعروض والخدمات المتكاملة التي تجعلك متفوقا
+              علميا
+            </p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <button
+                type="button"
+                class="SignUp btn py-2 top-0 end-0 mt-2 me-2"
+              >
+                التسجيل
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="mb-3">التواصل</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i> المنيا, مصر
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+201013433310
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>alfakhery2101@gmail.com
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://twitter.com/Mostafa_Ba4r"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.facebook.com/mostafasaeed.alfakhery"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.linkedin.com/in/mostafa-saeed-a46690211/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- Footer End -->
+<!-- card click details -->
+    <div class="detailesCurrent p-3">
+      <span class="closeDetile btn btn-success">X</span>
+      <img src="" name="images" />
+      <h2 class="nameH2 mt-3 mb-3"></h2>
+      <p class="desc"></p>
+    </div>
+    <!-- end card click details -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="main.js"></script>
+    <script src="bootstrapfiles/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrapfiles/js/all.min.js"></script>
+  </body>
+</html>

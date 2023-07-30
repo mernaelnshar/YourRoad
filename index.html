@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طريقك</title>
+    
+    <link rel="icon" href="IMG/graduation-cap-solid (2).svg">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" dir="rtl" >
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+        <h2 class="logo m-0">
+         <i class="fa-solid fa-graduation-cap"></i> طريقك  
+        </h2>
+      </a>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" > <span class="navbar-toggler-icon"></span> </button>
+     
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="links navbar-nav ms-auto p-4 p-lg-0">
+          <a href="#" class="">الصفحة الرئسية</a>
+          <a href="#stages" class=""> المراحل الدراسية </a>
+          <a href="#about" class="">معلومات عنا </a>
+          <a href="#contact" class="">اتصل بنا</a>
+        </div>
+        <div class="icons">
+          <button class="btnLogin"style="">تسجيل كطالب</button>
+          <a href="tech.html"><button class="btnLogintech"style="">تسجيل كمعلم</button></a>
+        </div>
+        
+      </div>
+      </nav>
+    <!-- Navbar End -->
+
+    <!-- Account Form -->
+   <div class="account-form">
+    <span class="icon-close" id="close-form"><ion-icon name="close"></ion-icon></span>
+
+  <div class="buttons">
+    <span class="btn active login-btn">تسجيل الدخول</span>
+    <span class="btn register-btn">انشاء حساب</span>
+  </div>
+  <form class="login-form active" action="" >
+    <h3>تسجيل الدخول</h3>
+    <input type="email" dir="rtl" placeholder="ادخل البريد الالكتروني" class="form-control mb-3" id="email-login" required/>
+    <input type="password" dir="rtl" placeholder="ادخل الرقم السري" class="form-control mb-3" id="pass-login"required  />
+    <div class="flex">
+      <input type="checkbox" name="" id="remember-me" />
+      <label for="remember-me" >تذكرني</label>
+      <a href="#">نسيت الرقم السري؟</a>
+    </div>
+    <button class="btn login" id="login">تسجيل الدخول </button>
+  </form>
+
+  <!-- start register -->
+
+  <form class="register-form" action=""dir="rtl" >
+    <h3>سجل الان</h3>
+    <input type="text" placeholder="ادخل اسمك" class="form-control mb-3" id="name-register" onkeyup="ValidOrNotname();" required />
+    <input type="text" placeholder="ادخل رقمك" class="form-control mb-3" id="phone-register" onkeyup="ValidOrNotphone();" required />
+    <input type="email" placeholder="ادخل البريد الالكتروني" class="form-control mb-3" id="email-register" onkeyup="ValidOrNotemail();"  required />
+    <input type="text" placeholder="ادخل السنه الدراسية" class="form-control mb-3" id="stage-register" required/>
+    <input type="password" placeholder="ادخل الرقم السري" class="form-control mb-3" id="pass-register" onkeyup="ValidOrNotpass();"  required />
+    <input type="password" placeholder="اكد الرقم السري" class="form-control mb-3" id="confirm-pass"  required />
+    
+    
+    <button class="btn login" id="submit">حفظ</button>
+</form>
+   </div>
+
+    <!-- End Account Form -->
+     <div class="container-fluid p-0 mb-5" dir="rtl">
+    <div class="owl-carousel header-carousel position-relative">
+    <div class="owl-carousel-item position-relative">
+    <img class="img-fluid" src="IMG/besher fa5r elgebal.jpg" >
+    <div
+      class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+      style="background: rgba(24, 29, 56, 0.167)"
+    >
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-sm-10 col-lg-8">
+            <h5
+              class="mb-3 text-white" style=" text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.769);"
+            >
+            <b>
+            احصل على التعليم عبر الإنترنت من منزلك
+            </b>
+          </h5>
+            <h1 class="display-3  animated slideInDown" style="color: #ffbf00; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.769);">
+              <b>ابدأ الآن</b>
+            </h1>
+            <p class="fs-5 text-white mb-4 pb-2">
+              منصة "طريقك" هي منصة تعليمية مبتكرة تهدف إلى تسهيل وتحسين عملية التعلم
+للطلاب في مختلف المستويات التعليمية. تم تطوير المنصة بهدف تلبية احتياجات 
+                      الطلاب والمعلمين على حد سواء.
+              
+            </p>
+            <button class="Joinn btn py-md-3 px-md-5 animated slideInRight"  >تسجيل الدخول</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+   </div>
+
+     <!-- Stages Start -->
+   <div class="container-xxl py-5"id="stages">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-5" style="padding-bottom: 15px;">المراحل الدراسية</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="stage col-lg-4 col-md-6  " data-wow-delay="0.1s">
+                <div class=" course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid stage" src="IMG/working-new-project-school.jpg" alt="">
+                        
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0"> المرحلة الثانوية</h3>
+                        <div class="mb-3">
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                        </div>
+                        <h5 class="mb-4">طريقك</h5>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2" style="color: #ffbf00;"></i>30 طالب</small>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 wow " data-wow-delay="0.3s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid stage" src="IMG/happy.jpg" alt="">
+                        
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">المرحلة الإعدادية</h3>
+                        <div class="mb-3">
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                          <small class="fa fa-star" style="color: #ffbf00;"></small>
+                            
+                        </div>
+                        <h5 class="mb-4">طريقك</h5>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2" style="color: #ffbf00;"></i>30 طالب</small>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 wow " data-wow-delay="0.5s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid stage" src="IMG/positive-elementary-students-reading-book-class.jpg" alt="">
+                        
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">المرحلة الإبتدائية</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star" style="color: #ffbf00;"></small>
+                            <small class="fa fa-star" style="color: #ffbf00;"></small>
+                            <small class="fa fa-star" style="color: #ffbf00;"></small>
+                            <small class="fa fa-star" style="color: #ffbf00;"></small>
+                            <small class="fa fa-star" style="color: #ffbf00;"></small>
+                            
+                        </div>
+                        <h5 class="mb-4">طريقك</h5>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2" style="color: #ffbf00;"></i>30 طالب</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- Stages End -->
+
+  
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" dir="rtl" id="about">
+        <div class="container">
+          <div class="row g-5">
+            <h1 style="text-align: center;"> معلومات عنا </h6>
+            <div class="col-lg-6 wow fadeInUp">
+              
+              
+              <h2 class="mb-5" style="padding-top: 15%;">مرحبًا بك في طريقك</h2>
+              <p class="mb-5">
+                احصل على المساعدة الدراسية التي تحتاجها في لحظات و استمتع بتجربة تعليمية ممتعة و فريدة من نوعها.
+                بخطوات بسيطة بإمكانك الوصول الى اكفاء المدرسين اونلاين ليقوموا بمساعدتك والاجابة على اسئلتك الخاصة بالمنهج الدراسي.
+              </p>
+              
+              
+              
+            </div>
+            <div  class="col-lg-6 wow fadeInUp"  data-wow-delay="0.1s"  style="min-height: 400px">
+                <div class="position-relative h-100">
+                  <img  class="img-fluid position-absolute w-100 h-100"  src="IMG/4662915_2397245-removebg-preview.png"  alt=""  style="object-fit: cover"/>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+      <!-- About End -->
+
+      
+
+
+   <!-- Contact -->
+   <h1 class="mb-0" style="text-align: center;" id="contact">  اتصل بنا </h1>
+   <div style="text-align: center; padding: 30px; box-shadow: 0 32px 52px 0#ccd4d5; margin: 80px;">
+    
+    <div class="row g-2">
+      
+       <div class="col-6 " data-wow-delay="0.3s">
+           <iframe class="position-relative rounded w-100 h-100"
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+               frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+               tabindex="0">
+           </iframe>
+       </div>
+       <div class="col-6" data-wow-delay="0.5s" dir="rtl">
+           <form>
+               <div class="row g-3">
+                   <div class="col-md-6">
+                       <div class="form-floating">
+                           <input type="text" class="form-control" id="name" placeholder="Your Name">
+                           <label for="name" >الاسم</label>
+                       </div>
+                   </div>
+                   <div class="col-md-6">
+                       <div class="form-floating">
+                           <input type="email" class="form-control" id="email" placeholder="Your Email">
+                           <label for="email"> بريدك الالكتروني </label>
+                       </div>
+                   </div>
+                   <div class="col-12">
+                       <div class="form-floating">
+                           <input type="text" class="form-control" id="subject" placeholder="Subject">
+                           <label for="subject">الموضوع</label>
+                       </div>
+                   </div>
+                   <div class="col-12">
+                       <div class="form-floating">
+                           <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                           <label for="message">الرسالة</label>
+                       </div>
+                   </div>
+                   <div class="col-12">
+                       <button class="btnmessage btn  w-100 py-3" type="submit">ارسل رساله</button>
+                   </div>
+               </div>
+           </form>
+       </div>
+   </div> 
+</div>
+   <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div dir="rtl"  class="container-fluid footer pt-5 mt-5 wow fadeIn">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <h4 class=" mb-3">سجل الآن لأول مرة</h4>
+          <p>
+            استمتع مع موقعنا بالعروض والخدمات المتكاملة التي تجعلك متفوقا علميا
+          </p>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            
+            <button
+              type="button"
+              class="SignUp btn  py-2  top-0 end-0 mt-2 me-2"
+            >
+              التسجيل
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" >
+          <h4 class=" mb-3">التواصل</h4>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i> المنيا, مصر
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+201013433310
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>alfakhery2101@gmail.com
+          </p>
+         
+        </div>
+        <div class="col-lg-4 col-md-6" >
+          <div class="d-flex pt-2">
+            <a
+              class="btn btn-outline-light btn-social"
+              href="https://twitter.com/Mostafa_Ba4r"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-light btn-social"
+              href="https://www.facebook.com/mostafasaeed.alfakhery"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            
+            <a
+              class="btn btn-outline-light btn-social"
+              href="https://www.linkedin.com/in/mostafa-saeed-a46690211/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+     <!-- Footer End -->
+    
+
+     
+
+
+     
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="Javascript/home.js"></script>
+  </body>
+</html>
