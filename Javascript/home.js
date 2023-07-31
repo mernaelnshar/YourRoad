@@ -197,7 +197,7 @@ btnsave2.addEventListener("click",(e)=>{
    
   function ValidOrNotname(){
     // var regex = /^[A-Z][a-z]{3,8}$/
-    var regename = /^[A-Z][a-z]+( [A-Z][a-z]+)*$/
+    var regename = /^[A-Z][a-z]{3,8}$/
     if(regename.test(Name.value)==true)
     {
         Name.classList.add("is-valid")
