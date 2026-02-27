@@ -1,210 +1,150 @@
-body{
-  font-family: 'Droid Arabic Kufi', sans-serif;
-    color: #073259;
-}
 
-.faf {
-    display: inline-block;
-    transform: scale(-1, 1);
-    color: #ffbf00;
-    padding: 20px;
-    font-size: 2rem;
-    margin-right: 58rem;
-  }
-
-/* تحديد حجم الخطوط والألوان والخطوط الفرعية والخطوط الرئيسية والتصميمات الأخرى */
-.wrapper {
-    position: relative;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,.5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 0 100vw rgba(0,0,0,.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: .5s ease , height .2s ease;
-    width: 450px;
-    height: 600;
-    bottom: 600px;
-    left: 580px;
-  }
-  
-  .active-popup{
-    transform: scale(1);
-  }
-  
-  .form-box-login{
-    width: 100%;
-    padding: 40px;
-  }
-  
-  .form-box-login{
-    transition: transform .18 ease;
-    transform: translateX(0);
-  }
-  
-  .icon-close2{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10%;
-    max-width: 45px;
-    height: 45px;
-    background: rgba(255,255,255,.5);
-    font-size: 2em;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .input{
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  /*  */
-  .wrapper2 {
-    position: relative;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,.5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 0 100vw rgba(0,0,0,.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: .5s ease , height .2s ease;
-    width: 450px;
-    height:600;
-    bottom: 1000px;
-    left: 580px;
-  }
-  
-  .active-popup2{
-    transform: scale(1);
-  }
-  
-  .form-box-login{
-    width: 100%;
-    padding: 40px;
-  }
-  
-  .form-box-login{
-    transition: transform .18 ease;
-    transform: translateX(0);
-  }
-  
-  .icon-close22{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10%;
-    max-width: 45px;
-    height: 45px;
-    background: rgba(255,255,255,.5);
-    font-size: 2em;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
- 
-  
-  .button {
-    text-align: center;
-  }
-  .button2 {
-    text-align: center;
-  }
-  
-  .btnsave {
-    color:#073259;
-    border: 2px solid #ffbf00;
-    background: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1rem;
-  }
-
-  .btnsave:hover{
-    border: 2px solid #ffbf00;
-    color: #073259;
-    background: #ffbf00;
-  }
-    
-  .btnsave2 {
-    color:#073259;
-    border: 2px solid #ffbf00;
-    background: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1rem;
-  }
-
-  .btnsave2:hover{
-    border: 2px solid #ffbf00;
-    color: #073259;
-    background: #ffbf00;
-  }
-  
-  /* تطبيق استعلامات الوسائط */
-  @media(max-width: 900px) {  
-    .wrapper {
-        width: 70%;
-        left: 70px !important;
-        top: -900px;
-       
-      }
-      
-  }
-    /* تطبيق استعلامات الوسائط */
-    @media(max-width: 900px) {  
-      .wrapper2 {
-          width: 70%;
-          left: 70px !important;
-          top: -900px;
-         
-        }
-        
+    body {
+      font-family: 'Droid Arabic Kufi', sans-serif;
+      color: #073259;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
     }
 
-.btnteacher{
-        color: #073259;
-        border: 2px solid #ffbf00;
-}
-.btnteacher:hover{
-        background: #ffbf00;
-        color: #073259;
-} 
-.btnteacher2{
-  color: #073259;
-  border: 2px solid #ffbf00;
-}
-.btnteacher2:hover{
-  background: #ffbf00;
-  color: #073259;
-} 
+    /* Navbar */
+    .navbar-brand h2 {
+      color: #073259;
+    }
+    .faf {
+      display: inline-block;
+      transform: scale(-1, 1);
+      color: #ffbf00;
+      font-size: 2rem;
+      margin-right: 2rem;
+    }
 
-.hd{
-        color: #ffbf00;
-}
+    /* Buttons */
+    .btnteacher, .btnteacher2, .btnsave, .btnsave2 {
+      color: #073259;
+      border: 2px solid #ffbf00;
+      background: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 1rem;
+    }
+    .btnteacher:hover, .btnteacher2:hover, .btnsave:hover, .btnsave2:hover {
+      background: #ffbf00;
+      color: #073259;
+    }
 
+    .hd {
+      color: #ffbf00;
+    }
 
+    /* ================= POPUPS ================= */
+    .wrapper, .wrapper2 {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 400px;
+      max-width: 90%;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      z-index: 9999;
+      transition: transform 0.5s ease, opacity 0.4s ease;
+    }
+
+    /* عند الفتح */
+    .wrapper.active-popup, .wrapper2.active-popup2 {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+
+    /* Form Box */
+    .form-box-login {
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+    }
+
+    /* Close Icon */
+    .icon-close2, .icon-close22 {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.5);
+      font-size: 1.5em;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .icon-close2:hover, .icon-close22:hover {
+      background: crimson;
+      transform: rotate(90deg);
+    }
+
+    /* Inputs */
+    .input, .form-control {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    /* Buttons wrapper */
+    .button, .button2 {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .wrapper, .wrapper2 {
+        width: 90%;
+        padding: 20px;
+      }
+      .icon-close2, .icon-close22 {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background: #073259;
+      color: #ffffff;
+      padding: 50px 0;
+    }
+    .footer h4 {
+      color: #ffbf00;
+    }
+    .footer .btn-social {
+      margin-right: 5px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffbf00;
+      border: 1px solid #ffbf00;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    .footer .btn-social:hover {
+      background: #ffbf00;
+      color: #073259;
+    }

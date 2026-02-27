@@ -177,204 +177,279 @@ button:hover
   background: #ffbf00;
   
 }
-/* start footer */
-.footer{
+/* ================= FOOTER ================= */
+.footer {
   background: #073259;
   color: #ffffff;
-  
+  padding: 50px 0 30px;
+  font-family: 'Cairo', sans-serif;
 }
-.footer h4{
+
+.footer h4 {
   color: #ffbf00;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
-.footer .SignUp{
+
+.footer p {
+  color: #ffffffcc; /* شوية شفافية للأناقة */
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.footer a.SignUp {
+  display: inline-block;
   color: #ffbf00;
   border: 2px solid #ffbf00;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: 0.3s;
+  text-decoration: none;
 }
-.footer .SignUp:hover{
+
+.footer a.SignUp:hover {
   color: #073259;
-  border: 2px solid #ffbf00;
   background: #ffbf00;
+  border: 2px solid #ffbf00;
 }
-.footer .btn.btn-social {
-  margin-right: 5px;
-  width: 35px;
-  height: 35px;
-  display: flex;
+
+.footer .btn-social {
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   color: #ffbf00;
   font-weight: normal;
   border: 1px solid #ffbf00;
-  border-radius: 35px;
-  transition: .3s;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.footer .btn.btn-social:hover {
+.footer .btn-social:hover {
   background: #ffbf00;
   color: #073259;
+  transform: scale(1.1);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer h4 {
+    font-size: 20px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
+  .footer .btn-social {
+    width: 35px;
+    height: 35px;
+  }
 }
 /* End footer */
 
-
-
-/* for java script */
-
-.detailesCurrent
-{
+/* ================= OVERLAY ================= */
+.detailesCurrent {
   position: fixed;
-  left: 400px;
-  top:25%;
-  background: transparent;
-  
-  border: 2px solid rgba(255, 255, 255, .5);
-  border-radius: 20px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-  
-  
-  width: 550px;
-  text-align: center;
-  z-index: 99999;
-  border-radius: 10px;
-  transform: scale(0);
-  transition: .7s;
-  
-}
-/* @media
+  inset: 0;
 
-  (max-width: 767px){
-.detailesCurrent{
-  width: 767px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-}}
-@media
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
 
- (min-width: 768px) and (max-width: 991px){
-.detailesCurrent{
-  width: 929px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .35s ease;
 
-} */
-
-
-
-.detailesCurrent .closeDetile{
-  background-color: #181d38;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  
-}
-.detailesCurrent img{
-  width: 50%;
-  /* height:370px; */
-}
-.popper
-{
-    
-   position: fixed;
-  left: 10%;
-  top:30%;
-  width: 50vw;
-  text-align: center;
-  z-index: 99999;
-  border-radius: 10px;
-    transform: scale(0);
-  transition: .7s; 
+  z-index: 9999;
 }
 
-.open{
-  transform: scale(1);
-}
-.popper.open{
-  height: 520px;
-  
-}
-
-.popper .cardpopper{
-  
-  background: transparent;
-  color: #073259;
-  font-weight: 600;
-  border: 2px solid rgba(255, 255, 255, .5);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-  padding: 15px;
-  left: 5%;
-  top:25%;
-  text-align: center;
-  width: 300px; 
-}
-.popper .cardpopper{
-  transition: transform .18 ease;
-  transform: translateX(0);
-  
-}
-.popper.open .cardpopper{
-  transition: none;
-  transform: translateX(-400px);
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .cardpopper
-{
-  background: transparent;
-  color: #073259;
-  font-weight: 600;
-  border: 2px solid rgba(255, 255, 255, .5);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-  padding: 5px;
-  left: 25%;
-  top:25%;
-  text-align: center;
-  width: 300px;
-   opacity: 0; 
-   transform: scale(0); 
-  
-  transition: all 0.5s;
-}
-.cardpopper .open
-{
+/* عند الفتح */
+.detailesCurrent.active {
   opacity: 1;
+  visibility: visible;
+}
+
+
+/* ================= CARD ================= */
+.detailsBox {
+  position: relative;
+
+  width: 350px;          
+  max-width: 90%;
+
+  padding: 30px 25px;
+
+  background: white;
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 25px 60px rgba(0,0,0,.3);
+
+  transform: scale(.7);
+  transition: .35s ease;
+}
+
+/* Animation */
+.detailesCurrent.active .detailsBox {
   transform: scale(1);
-} */
-.cardpopper img
-{
-  width: 60%;
-  height: 15vh;
-  margin-top: -50px;
 }
-.cardpopper h3
-{
-  font-size: 35px;
-  padding-top: 5px;
+
+
+/* ================= IMAGE ================= */
+.detailsBox img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
-.cardpopper .btnclose
-{
-  width: 50%;
+
+
+/* ================= TITLE ================= */
+.detailsBox h2 {
+  font-size: 22px;
+  color: #073259;
+  margin-bottom: 10px;
+}
+
+
+/* ================= DESCRIPTION ================= */
+.detailsBox p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+}
+
+
+/* ================= CLOSE BUTTON ================= */
+.closeDetile {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #073259;
+  color: white;
+
+  cursor: pointer;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .3s;
+}
+
+.closeDetile:hover {
+  background: crimson;
+  transform: rotate(90deg);
+}
+
+/* ================= POPPER OVERLAY ================= */
+.popper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+
+  z-index: 9999;
+}
+
+/* عند الفتح */
+.popper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* ================= CARD ================= */
+.popper .cardpopper {
+
+  width: 320px;
+  padding: 30px 20px;
+
+  text-align: center;
+  color: #073259;
+
+  background: rgba(255,255,255,0.15);
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.3);
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+
+  transform: scale(0.7) translateY(40px);
+  transition: 0.4s ease;
+}
+
+/* Animation عند الفتح */
+.popper.open .cardpopper {
+  transform: scale(1) translateY(0);
+}
+
+
+/* ================= IMAGE ================= */
+.cardpopper img {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+
+/* ================= TITLE ================= */
+.cardpopper h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+/* ================= BUTTON ================= */
+.cardpopper .btnclose {
+
+  width: 70%;
   border-radius: 30px;
-  border: 0;
-  padding: 15px;
+  border: none;
+
+  padding: 12px;
   margin-top: 20px;
-  color: #ffffff;
-  background-color: green;
+
+  color: white;
+  font-weight: 600;
+
+  background: linear-gradient(135deg,#198754,#20c997);
+
+  transition: 0.3s;
+}
+
+.cardpopper .btnclose:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
